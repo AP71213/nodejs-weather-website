@@ -28,19 +28,15 @@ const geocoding = (address, callBack) => {
         json: true
     }, (error, response) => {
         if (response === undefined) {
-            console.log(1)
             callBack(geocodeCallback('MAPBOX not able to get a response!'))
         } else if (response.body.message === undefined) {
             if (response.body.features[0]) {
                 callBack(geocodeCallback('', response))
-                console.log(2)
             } else {
                 callBack(geocodeCallback('Please enter a valid location!'))
-                console.log(3)
             }
         } else {
             callBack(geocodeCallback(response.body.message))
-            console.log(4)
         }
     })
 }

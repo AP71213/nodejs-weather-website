@@ -20,6 +20,20 @@ header {
     margin-bottom: 50px;
 }
 
+button {
+    background-color: #666;
+    color: aliceblue;
+}
+
+form input {
+    height: 25px;
+    width: 200px;
+}
+
+form button {
+    height: 30px;
+}
+
 header a {
     text-decoration: none;
     padding: 10px;
