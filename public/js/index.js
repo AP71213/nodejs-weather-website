@@ -1,4 +1,5 @@
 const log = console.log
+log('Temporary log')
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
