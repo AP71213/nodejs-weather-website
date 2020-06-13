@@ -1,0 +1,42 @@
+body {
+    max-width: 80%;
+    color: #666;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-family: 'arial';
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1{
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #888;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    border-top: 1px solid #666;
+    margin-top: 16px;
+    color: #666;
+    padding: 16px 0;
+}
+
+.portrait {
+    width: 250px;
+}
