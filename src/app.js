@@ -3,6 +3,7 @@ const weatherFetch = require('./utils/weatherStackUtil').weatherFetch
 const path = require('path')
 const hbs = require('hbs')
 const geoCode = require('./utils/geoCodeutil')
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -74,6 +75,6 @@ app.get('/*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server up and running.')
 })
